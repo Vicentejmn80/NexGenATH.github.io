@@ -1,0 +1,216 @@
+/* CSS Variables for colors */
+:root {
+    --primary: #57b5e7;
+    --secondary: #8d3fc1;
+    --darkbg: #0a0e17;
+    --darkcard: rgba(16, 23, 36, 0.8);
+    --darkborder: rgba(87, 181, 231, 0.2);
+    --darkborderhover: rgba(87, 181, 231, 0.5);
+    --purpleglow: rgba(141, 63, 193, 0.3);
+    --blueglow: rgba(87, 181, 231, 0.4);
+}
+
+/* Base body styles */
+body {
+    background-color: var(--darkbg);
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling for navigation */
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Gradient background effect */
+.gradient-bg {
+     background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Service card styles */
+.service-card {
+    background: var(--darkcard);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--darkborder);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--darkborderhover);
+    box-shadow: 0 5px 15px var(--blueglow);
+}
+
+/* Call to action button styles */
+ .cta-button {
+    background: linear-gradient(135deg, rgba(87, 181, 231, 0.9), rgba(141, 63, 193, 0.9)); /* Slightly more opaque */
+    border: none;
+    transition: all 0.3s ease;
+ }
+ .cta-button:hover {
+     background: linear-gradient(135deg, rgba(87, 181, 231, 1), rgba(141, 63, 193, 1));
+     box-shadow: 0 0 15px var(--purpleglow); /* Added subtle glow on hover */
+ }
+
+
+/* Hero section background and overlay */
+.hero-bg {
+    background-image: url('https://readdy.ai/api/search-image?query=futuristic%20digital%20landscape%20with%20flowing%20data%20streams%2C%20neural%20network%20visualizations%2C%20abstract%20patterns%20resembling%20complex%20algorithms%20in%20deep%20blue%20and%20purple%20hues%2C%20holographic%20interface%20elements%2C%20high-tech%20cityscape%20silhouette%2C%20dark%20background%20with%20glowing%20elements%2C%20science%20fiction%20aesthetic%2C%20digital%20art%2C%20highly%20detailed&width=1920&height=1080&seq=12345&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+ .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(10, 14, 23, 0.9) 0%, rgba(10, 14, 23, 0.7) 50%, rgba(10, 14, 23, 0.5) 100%); /* Adjusted gradient opacity */
+    z-index: 1;
+ }
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header Navigation Styles */
+.header-nav {
+    background: rgba(10, 14, 23, 0.85); /* Slightly more opaque */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(87, 181, 231, 0.3); /* Adjusted border opacity */
+}
+
+/* Pricing section background and overlay */
+.pricing-bg {
+    background-image: url('https://readdy.ai/api/search-image?query=futuristic%2520digital%2520landscape%2520with%2520flowing%2520data%2520streams%252C%2520abstract%2520patterns%2520resembling%2520pricing%2520tiers%2520and%2520business%2520models%252C%2520holographic%2520interface%2520elements%2520in%2520deep%2520blue%2520and%2520purple%2520hues%252C%2520dark%2520background%2520with%2520glowing%2520elements%252C%2520science%2520fiction%2520aesthetic%252C%2520digital%2520art%252C%2520highly%2520detailed&width=1920&height=600&seq=98765&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.pricing-overlay {
+    background: linear-gradient(90deg, rgba(10, 14, 23, 0.9) 0%, rgba(10, 14, 23, 0.7) 50%, rgba(10, 14, 23, 0.5) 100%); /* Adjusted gradient opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Pricing card styles */
+.pricing-card {
+    background: rgba(16, 23, 36, 0.8); /* Slightly more opaque */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(87, 181, 231, 0.2);
+    transition: all 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid rgba(87, 181, 231, 0.5);
+    box-shadow: 0 5px 15px var(--blueglow);
+}
+.pricing-card.featured {
+    border: 1px solid rgba(141, 63, 193, 0.5);
+    box-shadow: 0 5px 20px rgba(141, 63, 193, 0.3);
+}
+
+ /* Navigation link hover effect */
+ .nav-link {
+     position: relative;
+     transition: all 0.3s ease;
+ }
+ .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: -5px;
+     left: 0;
+     background: linear-gradient(90deg, var(--primary), var(--secondary));
+     transition: width 0.3s ease;
+ }
+ .nav-link:hover::after {
+     width: 100%;
+ }
+
+ /* Floating animation for logo */
+ .floating {
+     animation: float 3s ease-in-out infinite;
+ }
+ @keyframes float {
+     0% { transform: translateY(0px); }
+     50% { transform: translateY(-10px); }
+     100% { transform: translateY(0px); }
+ }
+
+/* Mobile menu styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Start off-screen */
+    height: 100vh;
+    width: 80%;
+    max-width: 300px;
+    background: rgba(10, 14, 23, 0.98); /* Almost opaque */
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Initially off-screen */
+    border-left: 1px solid rgba(87, 181, 231, 0.2);
+}
+.mobile-menu.active {
+    transform: translateX(0); /* Slide in */
+}
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none; /* Hidden by default */
+}
+.menu-overlay.active {
+    display: block; /* Show when menu is active */
+}
+
+/* Styles for the logos section */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.logo-item img {
+    max-height: 50px; /* Adjust size as needed */
+    width: auto;
+    filter: grayscale(100%) opacity(60%); /* Subtle look */
+    transition: filter 0.3s ease;
+}
+.logo-item img:hover {
+    filter: grayscale(0%) opacity(100%); /* Color on hover */
+}
+
+/* FAQ Accordion styles */
+.accordion-header {
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.accordion-header:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.accordion-content.active {
+    max-height: 500px; /* Adjust as needed */
+}

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen ATH | Tecnologías Avanzadas de IA</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="script.js"></script> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> </head>
+<body class="bg-[#070b12] text-gray-200 font-sans">
+
+    <nav class="header-nav fixed top-0 left-0 w-full z-50 py-3">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://i.postimg.cc/FsZL0c71/logo-nexgen-sin-fondo.png" alt="NexGen ATH Logo" class="h-12 mr-3">
+                    <span class="text-white text-xl font-bold">NexGen <span class="gradient-text">ATH</span></span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios" class="nav-link text-white hover:text-primary">Servicios</a>
+                    <a href="#industrias" class="nav-link text-white hover:text-primary">Industrias</a>
+                    <a href="#tecnologias" class="nav-link text-white hover:text-primary">Tecnologías</a>
+                    <a href="#precios" class="nav-link text-white hover:text-primary">Precios</a>
+                    <a href="#testimonios" class="nav-link text-white hover:text-primary">Testimonios</a>
+                    <a href="#contacto" class="cta-button text-white px-4 py-2 rounded-md font-medium hover:shadow-lg">Contacto</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="menu-overlay" class="menu-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu p-6">
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+                 <img src="https://i.postimg.cc/FsZL0c71/logo-nexgen-sin-fondo.png" alt="NexGen ATH Logo" class="h-10 mr-3">
+                 <span class="text-white text-xl font-bold">NexGen <span class="gradient-text">ATH</span></span>
+            </div>
+            <button id="close-menu-button" class="text-white">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+        </div>
+
+        <div class="flex flex-col space-y-6">
+            <a href="#servicios" class="text-white hover:text-primary text-lg">Servicios</a>
+            <a href="#industrias" class="text-white hover:text-primary text-lg">Industrias</a>
+            <a href="#tecnologias" class="text-white hover:text-primary text-lg">Tecnologías</a>
+            <a href="#precios" class="text-white hover:text-primary text-lg">Precios</a>
+            <a href="#testimonios" class="text-white hover:text-primary text-lg">Testimonios</a>
+            <a href="#contacto" class="cta-button text-white px-4 py-3 rounded-md font-medium text-center mt-4">Contacto</a>
+        </div>
+    </div>
+
+    <section class="hero-bg w-full min-h-screen flex items-center pt-16"> <div class="hero-overlay"></div>
+        <div class="container mx-auto px-4 py-20 text-center hero-content">
+            <div class="floating mb-6 inline-block">
+                 <img src="https://i.postimg.cc/FsZL0c71/logo-nexgen-sin-fondo.png" alt="NexGen ATH Logo" class="h-40 md:h-48 mx-auto">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span class="gradient-text">Soluciones Innovadoras</span> para tu Negocio
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-300">
+                Potenciamos tu empresa con tecnología de vanguardia e inteligencia artificial para ayudarte a alcanzar tus objetivos y superar a tu competencia.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contacto" class="cta-button text-white px-8 py-4 rounded-md text-lg font-medium hover:shadow-lg transition-all">
+                    ¡Solicita tu presupuesto!
+                </a>
+                <a href="#servicios" class="border border-white border-opacity-30 hover:border-opacity-70 text-white px-8 py-4 rounded-md text-lg font-medium transition-all hover:bg-white hover:bg-opacity-10">
+                    Descubre cómo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-gradient-to-b from-[#070b12] to-[#0a0e17]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Nuestros <span class="gradient-text">Servicios</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Descubre cómo nuestras soluciones de IA pueden transformar tu negocio y llevarlo al siguiente nivel.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="service-card rounded-lg p-8">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-robot-line text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Agentes de IA</h3>
+                    <p class="text-gray-300 mb-6">
+                        Automatiza y optimiza la comunicación en múltiples canales con agentes inteligentes que trabajan 24/7.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Correo Electrónico: Filtrado inteligente y respuestas automáticas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">WhatsApp: Atención automatizada y gestión 24/7.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Redes Sociales: Gestión automatizada de mensajes y publicaciones.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Llamadas: Asistentes virtuales con reconocimiento de voz.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-customer-service-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">CRM Automatizado con IA</h3>
+                    <p class="text-gray-300 mb-6">
+                        Transforma tu proceso de ventas y atención al cliente con un CRM inteligente.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">CRM Automatizado: Captación y seguimiento de clientes con embudos inteligentes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Integraciones: WhatsApp, Instagram, SMS, y análisis en tiempo real.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Atención al cliente 24/7: Soporte automatizado que resuelve dudas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Marketing con IA: Segmentación de audiencia y secuencias automatizadas.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                 <div class="service-card rounded-lg p-8">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-settings-line text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Sistemas Completos Automatizados</h3>
+                    <p class="text-gray-300 mb-6">
+                        Automatiza de extremo a extremo tus procesos clave para máxima eficiencia.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Captación de Clientes: Generación automática de leads.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Reuniones: Programación inteligente y seguimiento.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Procesos Internos: Automatización de flujos de trabajo.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Integración: Conexión con otras herramientas y plataformas.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mb-6">
+                         <i class="ri-briefcase-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Consultoría Empresarial</h3>
+                    <p class="text-gray-300 mb-6">
+                        Obtén asesoramiento experto para implementar y optimizar soluciones de IA en tu empresa.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Estrategias Personalizadas: Diseño de planes de acción a medida.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Implementación de IA: Asesoría en la integración de herramientas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Optimización: Análisis y mejora de sistemas existentes.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center mt-1 mr-3 text-secondary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-gray-300">Capacitación: Entrenamiento para equipos.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contacto" class="cta-button text-white px-8 py-4 rounded-md text-lg font-medium inline-block">
+                    Solicita tu consultoría gratuita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="industrias" class="py-24 bg-[#0a0e17]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Transformando</span> Industrias
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Nuestras soluciones están revolucionando las operaciones en múltiples sectores.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card rounded-lg overflow-hidden h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=futuristic%20healthcare%20facility%20with%20advanced%20medical%20technology%2C%20holographic%20displays%20showing%20patient%20data%2C%20medical%20professionals%20using%20AI%20interfaces%2C%20clean%20modern%20design%2C%20blue%20and%20white%20color%20scheme%2C%20digital%20health%20concept&width=600&height=400&seq=13579&orientation=landscape" alt="Healthcare AI" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Salud</h3>
+                        <p class="text-gray-300 mb-6">
+                            Diagnósticos impulsados por IA, planes de tratamiento personalizados y análisis predictivo de salud.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full">Diagnóstico IA</span>
+                            <span class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full">Medicina Personalizada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-lg overflow-hidden h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=futuristic%20financial%20trading%20floor%20with%20holographic%20displays%20showing%20market%20data%2C%20traders%20using%20AI%20interfaces%2C%20digital%20currency%20symbols%2C%20stock%20market%20visualizations%2C%20modern%20office%20environment%2C%20blue%20and%20purple%20lighting&width=600&height=400&seq=24680&orientation=landscape" alt="Finance AI" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Finanzas</h3>
+                        <p class="text-gray-300 mb-6">
+                            Detección avanzada de fraude, trading algorítmico y evaluación de riesgos.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary bg-opacity-10 text-secondary text-xs font-medium px-3 py-1 rounded-full">Prevención de Fraude</span>
+                            <span class="bg-secondary bg-opacity-10 text-secondary text-xs font-medium px-3 py-1 rounded-full">Análisis de Riesgos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-lg overflow-hidden h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=futuristic%20manufacturing%20facility%20with%20robotic%20assembly%20lines%2C%20AI-controlled%20machinery%2C%20holographic%20control%20panels%2C%20automated%20quality%20control%20systems%2C%20high-tech%20industrial%20environment%2C%20blue%20lighting&width=600&height=400&seq=36912&orientation=landscape" alt="Manufacturing AI" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Manufactura</h3>
+                        <p class="text-gray-300 mb-6">
+                            Automatización inteligente, mantenimiento predictivo y control de calidad.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full">Mantenimiento Predictivo</span>
+                            <span class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full">Control de Calidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="py-24 bg-[#070b12]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Tecnologías con las que <span class="gradient-text">Trabajamos</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Aprovechamos el poder de las plataformas líderes en IA y automatización para ofrecerte las mejores soluciones.
+                </p>
+            </div>
+            <div class="logo-grid">
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/57b5e7?text=OpenAI" alt="OpenAI Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/8d3fc1?text=Make" alt="Make Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/57b5e7?text=N8N" alt="N8N Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/8d3fc1?text=Claude" alt="Claude Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/57b5e7?text=DeepSeek" alt="DeepSeek Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/8d3fc1?text=Zapier" alt="Zapier Logo"></div>
+                <div class="logo-item"><img src="https://placehold.co/150x50/0a0e17/57b5e7?text=Meta" alt="Meta Logo"></div>
+                </div>
+             <div class="text-center mt-10">
+                 <p class="text-gray-400 text-sm">Estas son algunas de las tecnologías clave que integramos en nuestras soluciones.</p>
+             </div>
+        </div>
+    </section>
+
+
+    <section id="precios" class="pricing-bg w-full py-24">
+        <div class="pricing-overlay"></div>
+        <div class="container mx-auto px-4 py-12 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Planes y Precios</span>
+                </h2>
+                <p class="text-lg md:text-xl mb-6 text-gray-200">
+                    Elige el plan que mejor se adapte a tus necesidades.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="pricing-card rounded-lg overflow-hidden">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-white">Básico</h3>
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+                                <i class="ri-rocket-line text-xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-white">€49</span>
+                            <span class="text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Ideal para startups y pequeñas empresas.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Hasta 5 usuarios</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">10.000 consultas de API/mes</span>
+                            </li>
+                             <li class="flex items-center text-gray-500">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Soporte prioritario</span>
+                            </li>
+                             <li class="flex items-center text-gray-500">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Análisis personalizado</span>
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="block w-full py-3 bg-[#101724] border border-primary text-white rounded-md text-center text-lg font-medium">
+                            Contratar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured rounded-lg overflow-hidden transform scale-105">
+                    <div class="bg-secondary bg-opacity-20 py-2 px-4 text-center">
+                        <span class="text-white font-medium">Más Popular</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-white">Profesional</h3>
+                            <div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full">
+                                <i class="ri-bar-chart-line text-xl text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-white">€149</span>
+                            <span class="text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Perfecto para empresas en crecimiento.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-secondary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Hasta 20 usuarios</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-secondary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">50.000 consultas de API/mes</span>
+                            </li>
+                             <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-secondary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Soporte prioritario 24/5</span>
+                            </li>
+                             <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-secondary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Análisis de datos personalizado</span>
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="block w-full py-3 bg-secondary text-white rounded-md text-center text-lg font-medium">
+                            Contratar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pricing-card rounded-lg overflow-hidden">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-white">Empresarial</h3>
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+                                <i class="ri-building-line text-xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-white">€499</span>
+                            <span class="text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Solución completa para grandes empresas.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Usuarios ilimitados</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">250.000 consultas de API/mes</span>
+                            </li>
+                             <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Soporte 24/7 con SLA</span>
+                            </li>
+                             <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-gray-300">Análisis de datos avanzado</span>
+                            </li>
+                        </ul>
+                         <a href="#contacto" class="block w-full py-3 bg-[#101724] border border-primary text-white rounded-md text-center text-lg font-medium">
+                            Contratar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-200 mb-6">¿Necesitas una solución personalizada? Contáctanos para diseñar un plan a medida.</p>
+                <a href="#contacto" class="cta-button text-white px-8 py-4 rounded-md text-lg font-medium inline-block">
+                    Solicitar Plan Personalizado
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-[#0a0e17]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Preguntas <span class="gradient-text">Frecuentes</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Respuestas a las preguntas más comunes sobre nuestros servicios, planes y facturación.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Cómo funciona la facturación?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            La facturación se realiza de forma mensual o anual, según la opción seleccionada. Ofrecemos un descuento del 15% en todos los planes con pago anual. Aceptamos tarjetas de crédito, transferencias bancarias y PayPal. Las facturas se emiten el primer día de cada período de facturación y el pago se procesa automáticamente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-6 pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Puedo cambiar de plan en cualquier momento?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            Sí, puedes actualizar tu plan en cualquier momento y el cambio se aplicará inmediatamente. Si actualizas a mitad de ciclo de facturación, solo pagarás la diferencia prorrateada. Las reducciones de plan se aplicarán al inicio del siguiente ciclo de facturación para evitar interrupciones en el servicio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-6 pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Ofrecen período de prueba gratuito?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            Sí, ofrecemos un período de prueba gratuito de 14 días para todos nuestros planes. Durante este período tendrás acceso completo a todas las funcionalidades del plan seleccionado. No se requiere tarjeta de crédito para iniciar la prueba gratuita. Al finalizar el período, puedes elegir continuar con un plan de pago o cancelar sin compromiso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-6 pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Qué métodos de pago aceptan?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            Aceptamos los siguientes métodos de pago:
+                        </p>
+                        <ul class="mt-3 space-y-2">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-visa-fill text-blue-400"></i>
+                                </div>
+                                <span class="text-gray-300">Tarjetas de crédito (Visa, Mastercard, American Express)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-paypal-fill text-blue-500"></i>
+                                </div>
+                                <span class="text-gray-300">PayPal</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-bank-line text-gray-400"></i>
+                                </div>
+                                <span class="text-gray-300">Transferencia bancaria (solo planes anuales)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-6 pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Cómo puedo cancelar mi suscripción?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            Puedes cancelar tu suscripción en cualquier momento desde el panel de administración de tu cuenta o contactando a nuestro equipo de soporte. Si cancelas durante un período de facturación activo, tu suscripción permanecerá activa hasta el final del período actual. No ofrecemos reembolsos parciales por períodos no utilizados, excepto en circunstancias excepcionales evaluadas caso por caso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pricing-card rounded-lg overflow-hidden">
+                    <div class="accordion-header p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">¿Qué sucede si excedo mi límite de consultas API?</h3>
+                        <div class="w-6 h-6 flex items-center justify-center accordion-icon">
+                            <i class="ri-arrow-down-s-line text-lg text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-300">
+                            Si excedes el límite de consultas API incluido en tu plan, se aplicarán cargos adicionales a una tarifa reducida por cada 1.000 consultas adicionales. Recibirás notificaciones cuando alcances el 80% y el 95% de tu límite mensual. También puedes establecer límites de uso para evitar cargos inesperados o actualizar a un plan superior en cualquier momento si regularmente excedes tu cuota actual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-24 bg-[#0a0e12]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Lo que Dicen Nuestros <span class="gradient-text">Clientes</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Historias de éxito y opiniones sobre nuestro trabajo.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-full mx-auto"> <div class="service-card rounded-lg p-8 h-full flex flex-col">
+                    <div class="flex items-center mb-6">
+                        <i class="ri-double-quotes-l text-3xl text-primary mr-3"></i>
+                        <div class="flex">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-half-fill text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 italic text-lg flex-grow">
+                        "Increíble trabajo! Simplificaron nuestra web y ahora es mucho más fácil para nuestros clientes encontrar lo que necesitan. El equipo es muy profesional y atento."
+                    </p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold text-lg">JP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-xl">Juan Pérez</h4>
+                            <p class="text-gray-400 text-sm">Gerente, InnovaTech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-lg p-8 h-full flex flex-col">
+                    <div class="flex items-center mb-6">
+                        <i class="ri-double-quotes-l text-3xl text-primary mr-3"></i>
+                        <div class="flex">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 italic text-lg flex-grow">
+                        "La implementación de IA en nuestro CRM ha sido un antes y un después. La automatización nos ha permitido enfocarnos en lo importante y cerrar más ventas."
+                    </p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold text-lg">MA</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-xl">María Álvarez</h4>
+                            <p class="text-gray-400 text-sm">Directora de Ventas, Growth Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-lg p-8 h-full flex flex-col">
+                    <div class="flex items-center mb-6">
+                        <i class="ri-double-quotes-l text-3xl text-primary mr-3"></i>
+                        <div class="flex">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-half-fill text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 italic text-lg flex-grow">
+                        "El equipo de consultoría de NexGen ATH nos guió paso a paso en la integración de sistemas automatizados. Su experiencia fue invaluable para optimizar nuestros procesos internos."
+                    </p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold text-lg">RC</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-xl">Roberto Castro</h4>
+                            <p class="text-gray-400 text-sm">Gerente de Operaciones, Procesa Fácil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-gradient-to-b from-[#070b12] to-[#0a0e17]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Contáctanos</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    Estamos listos para escuchar tu proyecto y ayudarte a llevarlo al siguiente nivel.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#101724] rounded-lg p-8 border border-primary border-opacity-20">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Información de Contacto</h3>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-mail-line text-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white mb-2">Email</h4>
+                                <a href="mailto:NexGenath@gmail.com" class="text-primary hover:underline">NexGenath@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-phone-line text-lg text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white mb-2">Teléfono / WhatsApp</h4>
+                                <div class="flex items-center space-x-2">
+                                    <span>🇻🇪</span> <a href="tel:+584242349676" class="text-secondary hover:underline">+58 4242349676</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-whatsapp-line text-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white mb-2">WhatsApp Directo</h4>
+                                <a href="https://wa.me/584242349676" class="inline-flex items-center text-primary hover:underline" target="_blank">
+                                    <span>Enviar mensaje ahora</span>
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#101724] rounded-lg p-8 border border-primary border-opacity-20">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Envía tu Consulta</h3>
+
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-md bg-[#0a0e17] border border-primary border-opacity-20 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Tu nombre completo">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-md bg-[#0a0e17] border border-primary border-opacity-20 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="tu@email.com">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Tu mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-md bg-[#0a0e17] border border-primary border-opacity-20 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Cuéntanos sobre tu proyecto o necesidad"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 px-6 cta-button text-white rounded-md font-medium text-lg">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-16 pb-8 bg-[#070b12]">
+        <div class="container mx-auto px-4 pt-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="https://i.postimg.cc/FsZL0c71/logo-nexgen-sin-fondo.png" alt="NexGen ATH Logo" class="h-10 mr-3">
+                        <span class="text-white text-xl font-bold">NexGen <span class="gradient-text">ATH</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Soluciones avanzadas de IA para empresas innovadoras que buscan liderar sus industrias.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#101724] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-colors">
+                            <i class="ri-linkedin-fill text-lg"></i>
+                        </a>
+                         <a href="#" class="w-10 h-10 rounded-full bg-[#101724] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-colors">
+                            <i class="ri-twitter-fill text-lg"></i>
+                        </a>
+                         <a href="#" class="w-10 h-10 rounded-full bg-[#101724] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-colors">
+                            <i class="ri-instagram-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-white mb-6">Navegación</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#servicios" class="hover:text-primary transition-colors">Servicios</a></li>
+                        <li><a href="#industrias" class="hover:text-primary transition-colors">Industrias</a></li>
+                        <li><a href="#tecnologias" class="hover:text-primary transition-colors">Tecnologías</a></li>
+                        <li><a href="#precios" class="hover:text-primary transition-colors">Precios</a></li>
+                        <li><a href="#testimonios" class="hover:text-primary transition-colors">Testimonios</a></li>
+                        <li><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                 <div>
+                     <h3 class="text-xl font-semibold text-white mb-6">Contacto</h3>
+                     <div class="space-y-4 text-gray-400">
+                         <div class="flex items-center">
+                             <i class="ri-mail-line text-primary mr-3"></i>
+                             <a href="mailto:NexGenath@gmail.com" class="hover:text-primary transition-colors">NexGenath@gmail.com</a>
+                         </div>
+                         <div class="flex items-center">
+                              <i class="ri-phone-line text-secondary mr-3"></i>
+                             <span class="mr-2">🇻🇪</span>
+                             <a href="tel:+584242349676" class="hover:text-secondary transition-colors">+58 4242349676</a>
+                         </div>
+                          <div class="flex items-center">
+                              <i class="ri-whatsapp-line text-primary mr-3"></i>
+                             <a href="https://wa.me/584242349676" class="hover:text-primary transition-colors" target="_blank">Enviar WhatsApp</a>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-12 border-t border-gray-800 pt-8">
+                <p>&copy; 2025 NexGen ATH. Todos los derechos reservados.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="hover:text-primary transition-colors">Política de Privacidad</a>
+                    <a href="#" class="hover:text-primary transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="caseStudyModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+        <div class="bg-[#101724] rounded-lg p-8 max-w-2xl w-11/12 relative text-white">
+            <button id="closeModal" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+            <h3 id="modalTitle" class="text-2xl font-bold mb-4">Caso de Estudio: <span id="industryName"></span></h3>
+            <div id="modalContent">
+                <p class="text-gray-300">Aquí se mostrará un resumen o detalles del caso de estudio para la industria seleccionada.</p>
+                <p class="text-gray-400 mt-4">Este modal está presente en el código, pero no hay enlaces en la sección "Industrias" que lo activen actualmente.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
